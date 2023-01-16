@@ -89,4 +89,37 @@ body {
     background: linear-gradient(#34495e);
     font-size: 1.1rem;
 }
+  
+.form-check input {
+    border: 2.5px solid #ffffff;
+    background-color: white;
+    width: 5%;
+    height: 20px;
+    margin-top: 5px;
+    margin-bottom: 30px;
+    margin-left: 20px;
+    font-size: 0.1px;
+}
+  
+  .form-check input:checked {
+    background-color: #8400ff;
+    border-color: #00eeff;
+    width: 5%;
+    height: 20px;
+    margin-top: 5px;
+    margin-bottom: 30px;
+    font-size: 0.1px;
 
+  }
+  
+  .form-check-label {
+    margin: auto;
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: .8rem;
+    outline: none;
+    margin-top: 5px;
+    margin-bottom: 30px;
+    margin-left: 5px;
+  }
+  

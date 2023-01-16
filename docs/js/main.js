@@ -1,4 +1,5 @@
 'use strict';
+
 const $form = document.getElementById('form');
 const $legend = document.getElementsByTagName('legend')[0];
 const alertPlaceholder = document.getElementById('liveAlertPlaceholder');
@@ -6,6 +7,7 @@ const alertPlaceholder = document.getElementById('liveAlertPlaceholder');
 const formulario = {
   username: null,
   password: null,
+  accept: null,
 };
 
 const alert = (message, type) => {
@@ -20,7 +22,7 @@ const alert = (message, type) => {
 };
 
 function checkFormulario() {
-  if (formulario.username && formulario.password)
+  if (formulario.username && formulario.password && formulario.accept)
     return true;
   else return false;
 }
@@ -28,18 +30,19 @@ function checkFormulario() {
 function checkPermitido(obj) {
   try {
     const permitido = {
-      username: 'mari',
-      password: 1212,
+      username: 'bit',
+      password: 2023,
       accept: true,
     };
     if (
       obj.username === permitido.username &&
-      parseInt(obj.password) === permitido.password 
+      parseInt(obj.password) === permitido.password &&
+      obj.accept === permitido.accept
     ) {
-      window.open('docs\ejercicios.html', '_self');
+      window.open('ejercicios.html#', '_self');
     } else {
       alert(
-        'Intenta nuevamente!',
+        'Acceso denegado, revisa tus credenciales.',
         'warning'
       );
     }
@@ -56,6 +59,10 @@ $form.password.addEventListener('input', (e) => {
   formulario.password = e.target.value;
 });
 
+$form.accept.addEventListener('change', (e) => {
+  formulario.accept = e.target.checked;
+});
+
 $form.addEventListener('submit', (e) => {
   e.preventDefault();
   if (checkFormulario() === true) {
@@ -65,3 +72,5 @@ $form.addEventListener('submit', (e) => {
     alert('Todos los campos son obligatorios.', 'danger');
   }
 });
+
+
