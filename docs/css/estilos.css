@@ -1,0 +1,92 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    font-family: Arial, Helvetica, sans-serif;
+    background: linear-gradient(to top, rgb(114, 3, 204), rgb(0, 0, 0));
+}
+
+.form-body {
+    width: 400px;
+    min-width: 300px;
+    border-radius: 10px;
+    border-top-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+    border: solid 1px #1fa0a08c;
+    background-color: #00000073;
+    margin: 10px;
+}
+
+.form-body img {
+    width: 150px;
+    display: block;
+    margin: 20px auto;
+}
+.text {
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: white;
+    margin-bottom: 25px;
+}
+
+.form-body input {
+    display: block;
+    margin: auto;
+    height: 40px;
+    width: 75%;
+    padding-left: 10px;
+    color: white;
+    border: 1px solid white;
+    border-radius: 2px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: transparent;
+    border-top-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    font-size: 1rem;
+    outline: none;
+}
+
+.form-body input[type="password"] {
+    margin-top: 20px;
+}
+
+::placeholder {
+    font-size: 1rem;
+    color: rgba(255, 255, 255, 0.596)
+}
+
+.form-body input:hover {
+    transition: .1s;
+    border: 2.5px solid #1fa0a0;
+    color: #1fa0a0;
+}
+
+.form-body button {
+    display: block;
+    margin: auto;
+    margin-top: 25px;
+    margin-bottom: 30px;
+    height: 40px;
+    width: 78%;
+    border-radius: 2px;
+    cursor: pointer;
+    outline: none;
+    border: 2px solid #1fa0a0;
+    transition: all .5s ease;
+}
+
+.form-body button:hover {
+    color: #680088;
+    border: 2p solid #3498db;
+    background: linear-gradient(#34495e);
+    font-size: 1rem;
+}
+
