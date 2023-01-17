@@ -1,9 +1,44 @@
-* {
-    padding: 0;
-    margin: 0;
+@import url('https://fonts.googleapis.com/css2?family=Righteous&family=Work+Sans:wght@100;300;400;600;800&display=swap');
+*{
     box-sizing: border-box;
+    font-family: 'Work Sans';
+    margin: 0;
+    padding: 0;
+}
+html{
+    scroll-behavior: smooth;
 }
 
+.text {
+    text-align: left;
+    padding-left: 20px;
+
+}
+
+footer{
+    background-color: rgba(6, 6, 7, 0.938);
+    color: #fff;
+    padding: 1px 0 1px 0;
+    text-align: center;
+    position: relative;
+    width: 100%;
+}
+footer .redes{
+    margin-bottom: 1px;
+}
+footer .redes a{
+    color: #fff;
+    display: inline-block;
+    text-decoration: none;
+    border: 1px solid #fff;
+    border-radius: 100%;
+    width: 42px;
+    height: 42px;
+    line-height: 42px;
+    margin: 40px 5px;
+    font-size: 20px;
+    transition: .3s;
+}
 
 
 
