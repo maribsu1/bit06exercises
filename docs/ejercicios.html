@@ -3,15 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scae=1.0, minimum-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ejercicios de Javascript</title>
     <link rel="stylesheet" href="./css/ejercicios.css">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" rel="stylesheet"/>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-
-  </head>
+    <link rel="icon" type="image/x-icon" href="./img2/favicon.ico"/>
+</head>
 <body>
-    <div class="text-bg-dark p-3"><h1>Ejercicios Javascript</h1></div>
+    <div class="text-bg-dark p-3"><h1>Ejercicios Javascript</h1>
+    </div> 
     <div class="accordion accordion-flush" id="accordionFlushExample">
         <div class="accordion-item">
           <h2 class="accordion-header" id="flush-headingOne">
@@ -31,8 +33,8 @@
                     <br>
                 </form>
             </section>
-          </div>
-        </div>
+      </div>
+    </div>
         <div class="accordion accordion-flush" id="accordionFlushExample">
         <div class="accordion-item">
             <h2 class="accordion-header" id="flush-headingTwo">
@@ -54,7 +56,6 @@
                 </section>
                 </div>
             </div>
-        </div>
         <div class="accordion accordion-flush" id="accordionFlushExample">
         <div class="accordion-item">
           <h2 class="accordion-header" id="flush-headingThree">
@@ -85,22 +86,20 @@
                   </section>
             </div>
           </div>
-        </div>
-
         <div class="accordion accordion-flush" id="accordionFlushExample">
           <div class="accordion-item">
               <h2 class="accordion-header" id="flush-headingFour">
                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">
-                  <h4> 4. Pedir un número y mostrar los números pares desde 1 hasta n. </h4>
+                    <h4> 4. Pedir un número y mostrar los números pares desde 1 hasta n. </h4>
                 </button>
               </h2>
               <div id="flush-collapseFour" class="accordion-collapse collapse" aria-labelledby="flush-headingFour" data-bs-parent="#accordionExample">
                   <div class="accordion-body">Ingrese un número</div>
                   <section>
                     <div id="liveAlertPlaceholder4"></div>
-                    <form  id="ejercicio4">
+                    <form id="ejercicio4">
                       <div class="container-fluid">
-                              <input type="number" name="numero">
+                              <input type="number" id="numero" name="numero">
                               <button type="submit" class="btn btn-dark">Confirmar</button>
                       </div>
                       <br>
@@ -108,9 +107,479 @@
                   </section>
                </div>
           </div>
+          <div class="accordion accordion-flush" id="accordionFlushExample">
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingFive">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFive" aria-expanded="false" aria-controls="flush-collapseFive">
+                    <h4>5. Pedir un número, mostrar el doble de n.</h4>
+                  </button>
+                </h2>
+                <div id="flush-collapseFive" class="accordion-collapse collapse" aria-labelledby="flush-headingFive" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">Ingrese un número</div>
+                    <section>
+                      <div id="liveAlertPlaceholder5"></div>
+                      <form  id="ejercicio5">
+                        <div class="container-fluid">
+                                <input type="number" id="doble" name="numero">
+                                <button type="submit" class="btn btn-dark">Confirmar</button>
+                        </div>
+                        <br>
+                      </form>
+                    </section>
+                 </div>
+            </div>
+           <div class="accordion accordion-flush" id="accordionFlushExample">
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="flush-headingSix">
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseSix" aria-expanded="false" aria-controls="flush-collapseSix">
+                        <h4>6. Pedir un número, mostrar el triple de n.</h4>
+                      </button>
+                    </h2>
+                    <div id="flush-collapseSix" class="accordion-collapse collapse" aria-labelledby="flush-headingSix" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">Ingrese un número</div>
+                        <section>
+                          <div id="liveAlertPlaceholder6"></div>
+                          <form  id="ejercicio6">
+                            <div class="container-fluid">
+                                    <input type="number" id="triple" name="numero">
+                                    <button type="submit" class="btn btn-dark">Confirmar</button>
+                            </div>
+                            <br>
+                          </form>
+                        </section>
+                     </div>
+                </div>
+                <div class="accordion accordion-flush" id="accordionFlushExample">
+                  <div class="accordion-item">
+                      <h2 class="accordion-header" id="flush-headingSeven">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseSeven" aria-expanded="false" aria-controls="flush-collapseSeven">
+                          <h4>7. Pedir un número, mostrar la mitad de n.</h4>
+                        </button>
+                      </h2>
+                      <div id="flush-collapseSeven" class="accordion-collapse collapse" aria-labelledby="flush-headingSeven" data-bs-parent="#accordionExample">
+                          <div class="accordion-body">Ingrese un número</div>
+                          <section>
+                            <div id="liveAlertPlaceholder7"></div>
+                            <form  id="ejercicio7">
+                              <div class="container-fluid">
+                                      <input type="number" id="mitad" name="numero">
+                                      <button type="submit" class="btn btn-dark">Confirmar</button>
+                              </div>
+                              <br>
+                            </form>
+                          </section>
+                       </div>
+                  </div>          
+                  <div class="accordion accordion-flush" id="accordionFlushExample">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="flush-headingEight">
+                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseEight" aria-expanded="false" aria-controls="flush-collapseEight">
+                            <h4>8. Pedir un número, mostrar la tercera parte de n.</h4>
+                          </button>
+                        </h2>
+                        <div id="flush-collapseEight" class="accordion-collapse collapse" aria-labelledby="flush-headingEight" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">Ingrese un número</div>
+                            <section>
+                              <div id="liveAlertPlaceholder8"></div>
+                              <form  id="ejercicio8">
+                                <div class="container-fluid">
+                                        <input type="number" id="tercera" name="numero">
+                                        <button type="submit" class="btn btn-dark">Confirmar</button>
+                                </div>
+                                <br>
+                              </form>
+                            </section>
+                         </div>
+                    </div>
+                    <div class="accordion accordion-flush" id="accordionFlushExample">
+                      <div class="accordion-item">
+                          <h2 class="accordion-header" id="flush-headingNine">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseNine" aria-expanded="false" aria-controls="flush-collapseNine">
+                              <h4>9. Pedir un número, mostrar el cuadrado de n.</h4>
+                            </button>
+                          </h2>
+                          <div id="flush-collapseNine" class="accordion-collapse collapse" aria-labelledby="flush-headingNine" data-bs-parent="#accordionExample">
+                              <div class="accordion-body">Ingrese un número</div>
+                              <section>
+                                <div id="liveAlertPlaceholder9"></div>
+                                <form  id="ejercicio9">
+                                  <div class="container-fluid">
+                                          <input type="number" id="cuadrado" name="numero">
+                                          <button type="submit" class="btn btn-dark">Confirmar</button>
+                                  </div>
+                                  <br>
+                                </form>
+                              </section>
+                           </div>
+                      </div>
+<div class="accordion accordion-flush" id="accordionFlushExample">
+    <div class="accordion-item">
+        <h2 class="accordion-header" id="flush-headingTen">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTen" aria-expanded="false" aria-controls="flush-collapseTen">
+            <h4>10. Pedir un número, mostrar n reducido en 5.</h4>
+          </button>
+        </h2>
+        <div id="flush-collapseTen" class="accordion-collapse collapse" aria-labelledby="flush-headingTen" data-bs-parent="#accordionExample">
+            <div class="accordion-body">Ingrese un número</div>
+            <section>
+              <div id="liveAlertPlaceholder10"></div>
+              <form  id="ejercicio10">
+                <div class="container-fluid">
+                        <input type="number" id="reducido5" name="numero">
+                        <button type="submit" class="btn btn-dark">Confirmar</button>
+                </div>
+                <br>
+              </form>
+            </section>
+         </div>
+    </div>
+    <div class="accordion accordion-flush" id="accordionFlushExample">
+      <div class="accordion-item">
+          <h2 class="accordion-header" id="flush-headingEleven">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseEleven" aria-expanded="false" aria-controls="flush-collapseEleven">
+              <h4>11. Pedir un número, mostrar el doble de n más 4.</h4>
+            </button>
+          </h2>
+          <div id="flush-collapseEleven" class="accordion-collapse collapse" aria-labelledby="flush-headingEleven" data-bs-parent="#accordionExample">
+              <div class="accordion-body">Ingrese un número</div>
+              <section>
+                <div id="liveAlertPlaceholder11"></div>
+                <form  id="ejercicio11">
+                  <div class="container-fluid">
+                          <input type="number" id="doblemas4" name="numero">
+                          <button type="submit" class="btn btn-dark">Confirmar</button>
+                  </div>
+                  <br>
+                </form>
+              </section>
+           </div>
+      </div>
+      <div class="accordion accordion-flush" id="accordionFlushExample">
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="flush-headingTwelve">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwelve" aria-expanded="false" aria-controls="flush-collapseTwelve">
+                <h4>12. Pedir un número, mostrar si es positivo, negativo o si es cero.</h4>
+              </button>
+            </h2>
+            <div id="flush-collapseTwelve" class="accordion-collapse collapse" aria-labelledby="flush-headingTwelve" data-bs-parent="#accordionExample">
+                <div class="accordion-body">Ingrese un número</div>
+                <section>
+                  <div id="liveAlertPlaceholder12"></div>
+                  <form  id="ejercicio12">
+                    <div class="container-fluid">
+                            <input type="number" id="positivonegativo" name="numero">
+                            <button type="submit" class="btn btn-dark">Confirmar</button>
+                    </div>
+                    <br>
+                  </form>
+                </section>
+             </div>
         </div>
-
+  <div class="accordion accordion-flush" id="accordionFlushExample">
+    <div class="accordion-item">
+        <h2 class="accordion-header" id="flush-headingThirteen">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThirteen" aria-expanded="false" aria-controls="flush-collapseThirteen">
+            <h4>13. Pedir un número, mostrar si es par, impar o si es cero.</h4>
+          </button>
+        </h2>
+        <div id="flush-collapseThirteen" class="accordion-collapse collapse" aria-labelledby="flush-headingThirteen" data-bs-parent="#accordionExample">
+            <div class="accordion-body">Ingrese un número</div>
+            <section>
+              <div id="liveAlertPlaceholder13"></div>
+              <form  id="ejercicio13">
+                <div class="container-fluid">
+                        <input type="number" id="paroimpar" name="numero">
+                        <button type="submit" class="btn btn-dark">Confirmar</button>
+                </div>
+                <br>
+              </form>
+            </section>
+         </div>
+    </div>
+    <div class="accordion accordion-flush" id="accordionFlushExample">
+      <div class="accordion-item">
+          <h2 class="accordion-header" id="flush-headingFourteen">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFourteen" aria-expanded="false" aria-controls="flush-collapseFourteen">
+              <h4>14. Pedir un número, mostrar si es un número primo o no.</h4>
+            </button>
+          </h2>
+          <div id="flush-collapseFourteen" class="accordion-collapse collapse" aria-labelledby="flush-headingFourteen" data-bs-parent="#accordionExample">
+              <div class="accordion-body">Ingrese un número</div>
+              <section>
+                <div id="liveAlertPlaceholder14"></div>
+                <form  id="ejercicio14">
+                  <div class="container-fluid">
+                          <input type="number" id="numeroprimo" name="numero">
+                          <button type="submit" class="btn btn-dark">Confirmar</button>
+                  </div>
+                  <br>
+                </form>
+              </section>
+           </div>
+      </div>
+<div class="accordion accordion-flush" id="accordionFlushExample">
+    <div class="accordion-item">
+        <h2 class="accordion-header" id="flush-headingFifteen">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFifteen" aria-expanded="false" aria-controls="flush-collapseFifteen">
+            <h4>15. Pedir dos números, mostrar la suma.</h4>
+          </button>
+        </h2>
+        <div id="flush-collapseFifteen" class="accordion-collapse collapse" aria-labelledby="flush-headingFifteen" data-bs-parent="#accordionExample">
+            <div class="accordion-body">Ingrese un número en cada campo</div>
+            <section>
+              <div id="liveAlertPlaceholder15"></div>
+              <form  id="ejercicio15">
+                <div class="container-fluid">
+                        <input type="number" id="suma" name="numero">
+                        <input type="number" id="numero15" name="numero">
+                        <button type="submit" class="btn btn-dark">Confirmar</button>
+                </div>
+                <br>
+              </form>
+            </section>
+         </div>
+    </div>
+    <div class="accordion accordion-flush" id="accordionFlushExample">
+      <div class="accordion-item">
+          <h2 class="accordion-header" id="flush-headingSixteen">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseSixteen" aria-expanded="false" aria-controls="flush-collapseSixteen">
+              <h4>16. Pedir dos números, mostrar la resta.</h4>
+            </button>
+          </h2>
+          <div id="flush-collapseSixteen" class="accordion-collapse collapse" aria-labelledby="flush-headingSixteen" data-bs-parent="#accordionExample">
+              <div class="accordion-body">Ingrese un número en cada campo</div>
+              <section>
+                <div id="liveAlertPlaceholder16"></div>
+                <form  id="ejercicio16">
+                  <div class="container-fluid">
+                          <input type="number" id="resta" name="numero">
+                          <input type="number" id="numero16" name="numero">
+                          <button type="submit" class="btn btn-dark">Confirmar</button>
+                  </div>
+                  <br>
+                </form>
+              </section>
+           </div>
+      </div>
+<div class="accordion accordion-flush" id="accordionFlushExample">
+    <div class="accordion-item">
+        <h2 class="accordion-header" id="flush-headingSeventeen">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseSeventeen" aria-expanded="false" aria-controls="flush-collapseSeventeen">
+            <h4>17. Pedir dos números, mostrar la multiplicación.</h4>
+          </button>
+        </h2>
+        <div id="flush-collapseSeventeen" class="accordion-collapse collapse" aria-labelledby="flush-headingSeventeen" data-bs-parent="#accordionExample">
+            <div class="accordion-body">Ingrese un número en cada campo</div>
+            <section>
+              <div id="liveAlertPlaceholder17"></div>
+              <form  id="ejercicio17">
+                <div class="container-fluid">
+                        <input type="number" id="numero17" name="numero">
+                        <input type="number" id="numer17" name="numero">
+                        <button type="submit" class="btn btn-dark">Confirmar</button>
+                </div>
+                <br>
+              </form>
+            </section>
+         </div>
+    </div>
+    <div class="accordion accordion-flush" id="accordionFlushExample">
+      <div class="accordion-item">
+          <h2 class="accordion-header" id="flush-headingEighteen">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseEighteen" aria-expanded="false" aria-controls="flush-collapseEighteen">
+              <h4>18. Pedir dos números, mostrar la división.</h4>
+            </button>
+          </h2>
+          <div id="flush-collapseEighteen" class="accordion-collapse collapse" aria-labelledby="flush-headingEighteen" data-bs-parent="#accordionExample">
+              <div class="accordion-body">Ingrese un número en cada campo</div>
+              <section>
+                <div id="liveAlertPlaceholder18"></div>
+                <form  id="ejercicio18">
+                  <div class="container-fluid">
+                        <input type="number" id="numero18" name="numero">
+                        <input type="number" id="numer18" name="numero">
+                          <button type="submit" class="btn btn-dark">Confirmar</button>
+                  </div>
+                  <br>
+                </form>
+              </section>
+           </div>
+      </div>
+<div class="accordion accordion-flush" id="accordionFlushExample">
+    <div class="accordion-item">
+        <h2 class="accordion-header" id="flush-headingNighteen">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseNighteen" aria-expanded="false" aria-controls="flush-collapseNighteen">
+            <h4>19. Pedir dos números, mostrar el resto de la división.</h4>
+          </button>
+        </h2>
+        <div id="flush-collapseNighteen" class="accordion-collapse collapse" aria-labelledby="flush-headingNighteen" data-bs-parent="#accordionExample">
+            <div class="accordion-body">Ingrese un número en cada campo</div>
+            <section>
+              <div id="liveAlertPlaceholder19"></div>
+              <form  id="ejercicio19">
+                <div class="container-fluid">
+                        <input type="number" id="resid1" name="numero">
+                        <input type="number" id="resid2" name="numero">
+                        <button type="submit" class="btn btn-dark">Confirmar</button>
+                </div>
+                <br>
+              </form>
+            </section>
+         </div>
+    </div>
+    <div class="accordion accordion-flush" id="accordionFlushExample">
+      <div class="accordion-item">
+          <h2 class="accordion-header" id="flush-headingTwenty">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwenty" aria-expanded="false" aria-controls="flush-collapseTwenty">
+              <h4>20. Pedir dos números, mostrar si el primer número es divisible por el segundo.</h4>
+            </button>
+          </h2>
+          <div id="flush-collapseTwenty" class="accordion-collapse collapse" aria-labelledby="flush-headingTwenty" data-bs-parent="#accordionExample">
+            <div class="accordion-body">Ingrese un número en cada campo</div>
+              <section>
+                <div id="liveAlertPlaceholder20"></div>
+                <form  id="ejercicio20">
+                  <div class="container-fluid">
+                          <input type="number" id="divisible1" name="numero">
+                          <input type="number" id="divisible2" name="numero">
+                          <button type="submit" class="btn btn-dark">Confirmar</button>
+                  </div>
+                  <br>
+                </form>
+              </section>
+           </div>
+      </div>
+<div class="accordion accordion-flush" id="accordionFlushExample">
+    <div class="accordion-item">
+        <h2 class="accordion-header" id="flush-headingTwentyOne">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwentyOne" aria-expanded="false" aria-controls="flush-collapseTwentyOne">
+            <h4>21. Pedir dos números y el nombre de una operación, mostrar el resultado.</h4>
+          </button>
+        </h2>
+        <div id="flush-collapseTwentyOne" class="accordion-collapse collapse" aria-labelledby="flush-headingTwentyOne" data-bs-parent="#accordionExample">
+            <div class="accordion-body">Ingrese un número en las dos primeras casillas y en la ultima casilla ingrese una operación</div>
+            <p class="text"><small>"sumar, restar, multiplicar o dividir"</small></p>
+            <section>
+              <div id="liveAlertPlaceholder21"></div>
+              <form  id="ejercicio21">
+                <div class="container-fluid">
+                        <input type="number" id="operacion1" name="numero">
+                        <input type="number" id="operacion2" name="numero">
+                        <input type="text" id="operacion3" name="texto">
+                        <button type="submit" class="btn btn-dark">Confirmar</button>
+                </div>
+                <br>
+              </form>
+            </section>
+         </div>
+    </div>
+<div class="accordion accordion-flush" id="accordionFlushExample">
+    <div class="accordion-item">
+        <h2 class="accordion-header" id="flush-headingTwentyTwo">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwentyTwo" aria-expanded="false" aria-controls="flush-collapseTwentyTwo">
+            <h4>22. Pedir un número, mostrar la suma total desde 1 hasta n.</h4>
+          </button>
+        </h2>
+        <div id="flush-collapseTwentyTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwentyTwo" data-bs-parent="#accordionExample">
+            <div class="accordion-body">Ingrese un número</div>
+            <section>
+              <div id="liveAlertPlaceholder22"></div>
+              <form  id="ejercicio22">
+                <div class="container-fluid">
+                        <input type="number" id="sumatotal" name="numero">
+                        <button type="submit" class="btn btn-dark">Confirmar</button>
+                </div>
+                <br>
+              </form>
+            </section>
+         </div>
+    </div>
+    <div class="accordion accordion-flush" id="accordionFlushExample">
+      <div class="accordion-item">
+          <h2 class="accordion-header" id="flush-headingTwentyThree">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwentyThree" aria-expanded="false" aria-controls="flush-collapseTwentyThree">
+              <h4>23. Pedir un número, mostrar la suma de los números pares desde 1 hasta n.</h4>
+            </button>
+          </h2>
+          <div id="flush-collapseTwentyThree" class="accordion-collapse collapse" aria-labelledby="flush-headingTwentyThree" data-bs-parent="#accordionExample">
+              <div class="accordion-body">Ingrese un número</div>
+              <section>
+                <div id="liveAlertPlaceholder23"></div>
+                <form  id="ejercicio23">
+                  <div class="container-fluid">
+                          <input type="number" id="sumadepares" name="numero">
+                          <button type="submit" class="btn btn-dark">Confirmar</button>
+                  </div>
+                  <br>
+                </form>
+              </section>
+           </div>
+      </div>
+      <div class="accordion accordion-flush" id="accordionFlushExample">
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="flush-headingTwentyFour">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwentyFour" aria-expanded="false" aria-controls="flush-collapseTwentyFour">
+                <h4>24. Pedir un número, mostrar la suma de los números impares desde 1 hasta n.</h4>
+              </button>
+            </h2>
+            <div id="flush-collapseTwentyFour" class="accordion-collapse collapse" aria-labelledby="flush-headingTwentyFour" data-bs-parent="#accordionExample">
+                <div class="accordion-body">Ingrese un número</div>
+                <section>
+                  <div id="liveAlertPlaceholder24"></div>
+                  <form  id="ejercicio24">
+                    <div class="container-fluid">
+                            <input type="number" id="sumadeimpar" name="numero">
+                            <button type="submit" class="btn btn-dark">Confirmar</button>
+                    </div>
+                    <br>
+                  </form>
+                </section>
+             </div>
+        </div>
+<div class="accordion accordion-flush" id="accordionFlushExample">
+    <div class="accordion-item">
+        <h2 class="accordion-header" id="flush-headingTwentyFive">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwentyFive" aria-expanded="false" aria-controls="flush-collapseTwentyFive">
+            <h4>25. Pedir un número, mostrar multiplos de 3 desde 1 hasta n.</h4>
+          </button>
+        </h2>
+        <div id="flush-collapseTwentyFive" class="accordion-collapse collapse" aria-labelledby="flush-headingTwentyFive" data-bs-parent="#accordionExample">
+            <div class="accordion-body">Ingrese un número</div>
+            <section>
+              <div id="liveAlertPlaceholder25"></div>
+              <form  id="ejercicio25">
+                <div class="container-fluid">
+                        <input type="number" id="multiplos" name="numero">
+                        <button type="submit" class="btn btn-dark">Confirmar</button>
+                </div>
+                <br>
+              </form>
+            </section>
+         </div>
+    </div>
+<div class="accordion accordion-flush" id="accordionFlushExample">
+    <div class="accordion-item">
+        <h2 class="accordion-header" id="flush-headingTwentySix">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwentySix" aria-expanded="false" aria-controls="flush-collapseTwentySix">
+            <h4>26. Pedir un número, mostrar los números desde n hasta 0.</h4>
+          </button>
+        </h2>
+        <div id="flush-collapseTwentySix" class="accordion-collapse collapse" aria-labelledby="flush-headingTwentySix" data-bs-parent="#accordionExample">
+            <div class="accordion-body">Ingrese un número</div>
+            <section>
+              <div id="liveAlertPlaceholder26"></div>
+              <form  id="ejercicio26">
+                <div class="container-fluid">
+                        <input type="number" id="numerocero" name="numero">
+                        <button type="submit" class="btn btn-dark">Confirmar</button>
+                </div>
+                <br>
+              </form>
+            </section>
+         </div>
+    </div>
       <footer>
+        <a href="https://maribsu1.github.io/bit06exercises" class="btn btn-dark">Cerrar sesión</a>
         <div class="redes">
             <a href="https://www.facebook.com/mariangel.socorro.1" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-facebook-f"></i></a>
             <a href="https://www.Twitter.com/maribsu" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-twitter"></i></a>

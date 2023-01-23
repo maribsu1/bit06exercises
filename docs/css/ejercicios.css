@@ -7,17 +7,18 @@
 }
 html{
     scroll-behavior: smooth;
+    
 }
 
 .text {
     text-align: left;
     padding-left: 20px;
+    color: rgb(194, 1, 1);
 
 }
 
 footer{
-    background-color: rgba(6, 6, 7, 0.938);
-    color: #fff;
+    background-color: rgba(6, 6, 7, 0.952);
     padding: 1px 0 1px 0;
     text-align: center;
     position: relative;

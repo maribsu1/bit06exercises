@@ -2,7 +2,16 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+
 }
+
+.alert {
+    display: flex;
+    width: 90%;
+    align-items: center;
+    margin: 20px auto;
+}
+
 
 body {
     display: flex;
@@ -69,27 +78,18 @@ body {
     color: #1fa0a0;
 }
 
-.form-body button {
+
+.btn {
     display: block;
     margin: auto;
     margin-top: 25px;
-    margin-bottom: 30px;
+    margin-left: 58px;
+    margin-bottom: 20px;
     height: 40px;
-    width: 78%;
-    border-radius: 2px;
-    cursor: pointer;
-    outline: none;
-    border: 2px solid #1fa0a0;
-    transition: all .5s ease;
+    width: 70%;
 }
 
-.form-body button:hover {
-    color: #680088;
-    border: 2p solid #3498db;
-    background: linear-gradient(#34495e);
-    font-size: 1.1rem;
-}
-  
+
 .form-check input {
     border: 2.5px solid #ffffff;
     background-color: white;
@@ -122,6 +122,15 @@ body {
     margin-bottom: 30px;
     margin-left: 5px;
   }
+
+  .condicion {
+    margin: auto;
+    color: rgb(83, 82, 82);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1rem;
+    margin-bottom: 3px;
+    margin-left: 50px;
+  }
   
   @media screen and (max-width:980px){
 
@@ -132,7 +141,8 @@ body {
         background-color: #00000052;
         width: 180px;
         align-content: center;
-        margin-right: 10px;
+        margin-right: 8%;
+
     }
 }
 @media screen and (max-width:700px){

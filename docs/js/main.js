@@ -1,5 +1,4 @@
 'use strict';
-
 const $form = document.getElementById('form');
 const $legend = document.getElementsByTagName('legend')[0];
 const alertPlaceholder = document.getElementById('liveAlertPlaceholder');
@@ -39,10 +38,10 @@ function checkPermitido(obj) {
       parseInt(obj.password) === permitido.password &&
       obj.accept === permitido.accept
     ) {
-      window.open('ejercicios.html#', '_self');
+      window.open('ejercicios.html', '_self');
     } else {
       alert(
-        'Acceso denegado, revisa tus credenciales.',
+        'Las credenciales no son correctas, intente de nuevo.',
         'warning'
       );
     }
@@ -72,5 +71,3 @@ $form.addEventListener('submit', (e) => {
     alert('Todos los campos son obligatorios.', 'danger');
   }
 });
-
-
