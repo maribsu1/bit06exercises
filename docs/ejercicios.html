@@ -12,6 +12,7 @@
     <link rel="icon" type="image/x-icon" href="./img2/favicon.ico"/>
 </head>
 <body>
+    <section id="inicio" class="inicio"></section>
     <div class="text-bg-dark p-3"><h1>Ejercicios Javascript</h1> 
     <div class="accordion accordion-flush" id="accordionFlushExample">
         <div class="accordion-item">
@@ -66,18 +67,18 @@
         </h2>
         <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionExample">
           <div class="accordion-body">Ingrese su nombre y edad.</div>
-          <p class="text"><small>Si se llama Pepita y es mayor de edad(+18) permitir ingreso a sala de espera 1.</small></p>
-          <p class="text"><small>Si se llama Pepita y es menor de edad(-18) permitir ingreso a sala de espera 2.</small></p>
+          <p class="text"><small>Si se llama <strong>Pepita</strong> y es mayor de edad(+18) permitir ingreso a sala de espera 1.</small></p>
+          <p class="text"><small>Si se llama <strong>Pepita</strong> y es menor de edad(-18) permitir ingreso a sala de espera 2.</small></p>
           <p class="text"><small>Si no se llama Pepita pero es mayor de edad(+18) permitir ingreso a sala de espera 3.</small></p>
           <p class="text"><small>Si no se llama Pepita pero es menor de edad(-18) permitir ingreso a sala de espera 4.</small></p> 
           <section>
             <div id="liveAlertPlaceholder3"></div>
                   <form id="ejercicio3">
                       <div class="container-fluid">   
-                          <input type="text" name="name" placeholder="Ingrese su nombre">
+                          <input type="text" name="nombre" placeholder="Nombre">
                           <br>
                           <br> 
-                          <input type="number" name="edad" placeholder="Ingrese su edad">
+                          <input type="number" name="edad" placeholder="Edad">
                           <button type="submit" class="btn btn-dark">Confirmar</button>
                         </div>
                         <br>
@@ -99,7 +100,7 @@
                   <div id="liveAlertPlaceholder4"></div>
                   <form id="ejercicio4">
                     <div class="container-fluid">
-                              <input type="number" id="numero" name="numero">
+                              <input type="number" id="numero4" name="numero4">
                               <button type="submit" class="btn btn-dark">Confirmar</button>
                     </div>
                     <br>
@@ -341,8 +342,8 @@
               <div id="liveAlertPlaceholder15"></div>
               <form  id="ejercicio15">
                 <div class="container-fluid">
-                        <input type="number" id="suma" name="numero">
-                        <input type="number" id="numero15" name="numero">
+                        <input type="number" id="suma" name="numero" placeholder="Número">
+                        <input type="number" id="numero15" name="numero" placeholder="Número">
                         <button type="submit" class="btn btn-dark">Confirmar</button>
                       </div>
                       <br>
@@ -364,8 +365,8 @@
                 <div id="liveAlertPlaceholder16"></div>
                 <form  id="ejercicio16">
                   <div class="container-fluid">
-                          <input type="number" id="resta" name="numero">
-                          <input type="number" id="numero16" name="numero">
+                          <input type="number" id="resta" name="numero" placeholder="Número">
+                          <input type="number" id="numero16" name="numero" placeholder="Número">
                           <button type="submit" class="btn btn-dark">Confirmar</button>
                         </div>
                         <br>
@@ -387,8 +388,8 @@
               <div id="liveAlertPlaceholder17"></div>
               <form  id="ejercicio17">
                 <div class="container-fluid">
-                        <input type="number" id="numero17" name="numero">
-                        <input type="number" id="numer17" name="numero">
+                        <input type="number" id="numero17" name="numero" placeholder="Número">
+                        <input type="number" id="numer17" name="numero" placeholder="Número">
                         <button type="submit" class="btn btn-dark">Confirmar</button>
                       </div>
                       <br>
@@ -410,8 +411,8 @@
                 <div id="liveAlertPlaceholder18"></div>
                 <form  id="ejercicio18">
                   <div class="container-fluid">
-                        <input type="number" id="numero18" name="numero">
-                        <input type="number" id="numer18" name="numero">
+                        <input type="number" id="numero18" name="numero" placeholder="Número">
+                        <input type="number" id="numer18" name="numero" placeholder="Número">
                           <button type="submit" class="btn btn-dark">Confirmar</button>
                         </div>
                         <br>
@@ -433,8 +434,8 @@
               <div id="liveAlertPlaceholder19"></div>
               <form  id="ejercicio19">
                 <div class="container-fluid">
-                        <input type="number" id="resid1" name="numero">
-                        <input type="number" id="resid2" name="numero">
+                        <input type="number" id="resid1" name="numero" placeholder="Número">
+                        <input type="number" id="resid2" name="numero" placeholder="Número">
                         <button type="submit" class="btn btn-dark">Confirmar</button>
                       </div>
                       <br>
@@ -456,8 +457,8 @@
                 <div id="liveAlertPlaceholder20"></div>
                 <form  id="ejercicio20">
                   <div class="container-fluid">
-                          <input type="number" id="divisible1" name="numero">
-                          <input type="number" id="divisible2" name="numero">
+                          <input type="number" id="divisible1" name="numero" placeholder="Número">
+                          <input type="number" id="divisible2" name="numero" placeholder="Número">
                           <button type="submit" class="btn btn-dark">Confirmar</button>
                         </div>
                         <br>
@@ -480,9 +481,9 @@
               <div id="liveAlertPlaceholder21"></div>
               <form  id="ejercicio21">
                 <div class="container-fluid">
-                        <input type="number" id="primernumero" name="operacion1" placeholder="Ingrese un número">
-                        <input type="number" id="segundonumero" name="operacion2" placeholder="Ingrese un número">
-                        <input type="text" id="operacion3" name="texto" placeholder="Ingrese una operación">
+                        <input type="number" id="primernumero" name="operacion1" placeholder="Número">
+                        <input type="number" id="segundonumero" name="operacion2" placeholder="Número">
+                        <input type="text" id="operacion3" name="texto" placeholder="Operación">
                         <button type="submit" class="btn btn-dark">Confirmar</button>
                 </div>
                 <br>
@@ -589,10 +590,10 @@
         <div id="flush-collapseTwentySix" class="accordion-collapse collapse" aria-labelledby="flush-headingTwentySix" data-bs-parent="#accordionExample">
             <div class="accordion-body">Ingrese un número</div>
             <section>
-              <div id="liveAlertPlaceholder26"></div>
+              <div  id="liveAlertPlaceholder26"></div>
               <form  id="ejercicio26">
                 <div class="container-fluid">
-                        <input type="number" id="numerocero" name="numero">
+                        <input type="number" id="numerocero" name="numerocero">
                         <button type="submit" class="btn btn-dark">Confirmar</button>
                       </div>
                       <br>
@@ -602,6 +603,8 @@
           </div>
       </div>    
       <footer>
+        <a href="https://maribsu1.github.io/bit07me" class="btn btn-dark">Página principal</a>
+        <a href="#inicio" class="btn btn-dark">Volver al Inicio</a>
         <a href="https://maribsu1.github.io/bit06exercises" class="btn btn-dark">Cerrar sesión</a>
         <div class="redes">
             <a href="https://www.facebook.com/mariangel.socorro.1" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-facebook-f"></i></a>

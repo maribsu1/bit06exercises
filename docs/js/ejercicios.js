@@ -1,15 +1,15 @@
 'use strict';
 // 1. Pedir nombre al usuario y saludarlo
-const $ejer1Form = document.getElementById('ejercicio1');
+const $ejercicio1 = document.getElementById('ejercicio1');
 const alertPlaceholder = document.getElementById('liveAlertPlaceholder');
 
 
-$ejer1Form.addEventListener('submit', (e) => {
+$ejercicio1.addEventListener('submit', (e) => {
   e.preventDefault();
-  if($ejer1Form.name.value.length==0 || /^\s+$/.test($ejer1Form.name.value) ){
+  if($ejercicio1.name.value.length==0 || /^\s+$/.test($ejercicio1.name.value) ){
     alert("Debe ingresar su nombre", 'danger');
   }else{
-    alert(`Hola, ${$ejer1Form.name.value}!`, 'info');
+    alert(`Hola, ${$ejercicio1.name.value}!`, 'info');
   }
         
 });
@@ -25,16 +25,16 @@ const alert = (message, type) => {
         alertPlaceholder.append(wrapper);
       };
 // 2. Pedir edad al usuario y responder si es o no es mayor de edad.
-const $ejer2Form=document.getElementById("ejercicio2");
+const $ejercicio2=document.getElementById("ejercicio2");
 const alertPlaceholder2 = document.getElementById('liveAlertPlaceholder2');
-$ejer2Form.addEventListener('submit',(e)=>{
+$ejercicio2.addEventListener('submit',(e)=>{
     e.preventDefault();
     esMayorDeEdad();
     
 });
 
 function esMayorDeEdad(){
-    const edad=$ejer2Form.edad.value;
+    const edad=$ejercicio2.edad.value;
     if(edad.length==0 || /^\s+$/.test(edad) ){
       alert2('Debe ingresar su edad.','danger' );
     }
@@ -62,33 +62,33 @@ si se llama Pepita y es mayor de edad permitir ingreso a sala de espera 1,
 si se llama Pepita y es menor de edad permitir ingreso a sala de espera 2,
 si no se llama Pepita pero es mayor de edad permitir ingreso a sala de espera 3,
 sino dirigir a la sala de espera 4. */
-const $ejer3Form=document.getElementById("ejercicio3");
+const $ejercicio3=document.getElementById("ejercicio3");
 const alertPlaceholder3 = document.getElementById('liveAlertPlaceholder3');
 
-$ejer3Form.addEventListener('submit',(e)=>{
+$ejercicio3.addEventListener('submit',(e)=>{
     e.preventDefault();
     condicionSala();
 });
 
 function condicionSala(){
-    const edad=$ejer3Form.edad.value;
-    const name=$ejer3Form.name.value;
+    const edad=$ejercicio3.edad.value;
+    const nombre=$ejercicio3.nombre.value;
      
-    if(name==="pepita" && edad>=18){
+    if(nombre==="pepita" && edad>=18){
         alert3("Pepita, usted debe ingresar a la sala de espera 1.", 'info' );
-    }else if(name==="Pepita" && edad>=18){
+    }else if(nombre==="Pepita" && edad>=18){
       alert3("Pepita, usted debe ingresar a la sala de espera 1.", 'info' );
-    }else if(name==="pepita" && edad<18){
+    }else if(nombre==="pepita" && edad<18){
         alert3("Pepita, usted debe ingresar a la sala de espera 2.", 'info' );
-    }else if(name==="Pepita" && edad<18){
+    }else if(nombre==="Pepita" && edad<18){
         alert3("Pepita, usted debe ingresar a la sala de espera 2.", 'info' );
-    }else if(name!="pepita" && edad>=18){
-        alert3("Usted debe ingresar a la sala de espera 3.", 'info' );
-    }else if(name.length==0 || /^\s+$/.test(name)
+    }else if(nombre!="pepita" && edad>=18){
+        alert3("Usted debe ingresar a la sala de espera 3.", 'success' );
+    }else if(nombre.length==0 || /^\s+$/.test(nombre)
     || edad.length==0 || /^\s+$/.test(edad)){
       alert3("Debe ingresar los datos", 'danger');
     }else{
-        alert3("Usted debe ingresar a la sala de espera 4.", 'info' );
+        alert3("Usted debe ingresar a la sala de espera 4.", 'success' );
     }
 }
 
@@ -104,27 +104,42 @@ const alert3 = (message, type) => {
     alertPlaceholder3.append(wrapper);
   };
 // 4. Pedir un número y mostrar los números pares desde 1 hasta n.
-const $form = document.getElementById('ejercicio4');
+const $ejercicio4 = document.getElementById('ejercicio4');
+const alertPlaceholder4 = document.getElementById('liveAlertPlaceholder4');
 
-$form.addEventListener('submit', multiplosDeDos);
+$ejercicio4.addEventListener('submit', (e) => {
+  e.preventDefault();
+  multiplosDeDos();
+})
 
-function multiplosDeDos(event) {
-  event.preventDefault();
-  const $numero = document.getElementById('numero');
-  const numero = $numero.value;
-
+function multiplosDeDos() {
+  const numero = parseInt($ejercicio4.numero4.value);
   let pares = '';
   for (let i = 1; i <= numero; i++) {
     if (i % 2 === 0) {
       pares += i + ' ';
-    } 
-    document.getElementById("liveAlertPlaceholder4").innerHTML = (`Los números pares desde 1 hasta ${numero}, son: ${pares}`); 
-  }}
+    }
+  }
+  alert4(`Los números pares desde 1 hasta ${numero}, son: ${pares}`,'info');
+}
+
+const alert4 = (message, type) => {
+  const wrapper = document.createElement('div');
+  wrapper.innerHTML = [
+    `<div class="alert alert-sucess alert-${type} alert-dismissible" role="alert">`,
+    `   <div>${message}</div>`,
+    '   <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>',
+    '</div>',
+  ].join('');
+
+  alertPlaceholder4.append(wrapper);
+
+};
+
 // 5. Pedir un número y mostrar el doble de n.
 const $ejercicio5 = document.getElementById('ejercicio5');
 const alertPlaceholder5 = document.getElementById('liveAlertPlaceholder5');
 
-  
 $ejercicio5.addEventListener('submit', (e) => {
     e.preventDefault();
     doble();
@@ -429,7 +444,7 @@ $ejercicio15.addEventListener('submit', (e) => {
 const sumaDeDosNumeros = ()=> {
     const numero1 = parseInt($ejercicio15.suma.value);
     const numero2 = parseInt($ejercicio15.numero15.value);
-    alert15(`La suma es:  ${numero1} + ${numero2} = ${numero1 + numero2}.`, 'info');
+    alert15(`${numero1} + ${numero2} = ${numero1 + numero2}`, 'info');
 }
 
 const alert15 = (message, type) => {
@@ -714,7 +729,6 @@ function sumaImpares() {
     const numero24= parseInt($ejercicio24.sumadeimpar.value);
 
     let resultado24 = 0;
-  
     for (let i = 1; i <= numero24; i++) {
       if (i % 2 !== 0) {
         resultado24 = resultado24 + i;
@@ -777,24 +791,31 @@ function multiplosDe3() {
       e.preventDefault();
       desdeNhasta0();
   })
-  const desdeNhasta0 = () => {
-    const numero26 = parseInt($ejercicio26.numerocero.value);
-  
-    for (let i = numero26; i > -1; i--) {
-      alert26(`${i}`, 'info')
-    }
    
-  };
-  const alert26 = (message, type) => {
-    const wrapper = document.createElement('div')
-    wrapper.innerHTML = [
-      `<div class="alert alert-${type} alert-dismissible" role="alert">`,
-      `   <div>${message}</div>`,
-      '   <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>',
-      '</div>'
-    ].join('')
-  
-    alertPlaceholder26.append(wrapper)
+const desdeNhasta0 = () => {
+  const numero = parseInt($ejercicio26.numerocero.value);
+ 
+  let retro = '';
+  for (let i = numero; i > -1; i--) {
+    if (i % 1 === 0) {
+      retro += i + ' ';
+    }
+  }
+    alert26(`Los números desde ${numero} hasta 0, son: ${retro}`,'info'); 
 
 };
-  
+
+const alert26 = (message, type) => {
+  const wrapper = document.createElement('div')
+  wrapper.innerHTML = [
+    `<div class="alert alert-${type} alert-dismissible" role="alert">`,
+    `   <div>${message}</div>`,
+    '   <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>',
+    '</div>'
+  ].join('')
+
+  alertPlaceholder26.append(wrapper)
+
+};
+
+
