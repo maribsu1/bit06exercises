@@ -587,8 +587,50 @@ const alert20 = (message, type) => {
 
 };
 // 21. Pedir dos números y el nombre de una operación, mostrar el resultado.
+const $ejercicio21 = document.getElementById('ejercicio21');
+const alertPlaceholder21 = document.getElementById('liveAlertPlaceholder21');
 
+$ejercicio21.addEventListener('submit', (e) => {
+    e.preventDefault();
+    
+    resultado();
+})
+const resultado = () => {
+    const primernumero = parseInt($ejercicio21.operacion1.value);
+    const segundonumero = parseInt($ejercicio21.operacion2.value);
+    let operacion = $ejercicio21.operacion3.value ;
+    switch (operacion) {
+        case 'sumar':
+          alert21(`${primernumero} + ${segundonumero} = ${primernumero + segundonumero}`, 'info');
+          break;
+        case 'restar':
+          alert21(`${primernumero} - ${segundonumero} = ${primernumero - segundonumero}`, 'dark');
+          break;
+        case 'multiplicar':
+          alert21(`${primernumero} x ${segundonumero} = ${primernumero * segundonumero}`,'success');
+          break;
+        case 'dividir':
+          alert21(`${primernumero} / ${segundonumero} = ${primernumero/ segundonumero}`, 'warning');
+          break;
+        default:
+          alert21(`La operación "${operacion}" no existe en esta función.`);
+          break;
+    }
+          
+}
 
+const alert21 = (message, type) => {
+    const wrapper = document.createElement('div')
+    wrapper.innerHTML = [
+      `<div class="alert alert-${type} alert-dismissible" role="alert">`,
+      `   <div>${message}</div>`,
+      '   <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>',
+      '</div>'
+    ].join('')
+  
+    alertPlaceholder21.append(wrapper)
+
+};
 // 22. Pedir un número, mostrar la suma total desde 1 hasta n.
 
 const $ejercicio22 =document.getElementById('ejercicio22');

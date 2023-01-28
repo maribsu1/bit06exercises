@@ -13,12 +13,11 @@ html{
 .text {
     text-align: left;
     padding-left: 20px;
-    color: rgb(194, 1, 1);
-
+    color: rgb(150, 0, 0);
 }
 
 footer{
-    background-color: rgba(6, 6, 7, 0.952);
+    background: rgb(36, 36, 39, 0.89);
     padding: 1px 0 1px 0;
     text-align: center;
     position: relative;
